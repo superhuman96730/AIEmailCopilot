@@ -27,7 +27,7 @@ client = TestClient(app)
 
 def test_classify_email():
     payload = {
-        "sender": "user@example.com",
+        "sender": "reynalynpayomo@gmail.com",
         "subject": "Hello",
         "body": "This is a test email body."
     }
