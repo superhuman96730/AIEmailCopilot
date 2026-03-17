@@ -13,4 +13,4 @@ class SummaryResponse(BaseModel):
 @router.post("/generate", response_model=SummaryResponse)
 def generate_summary(req: SummaryRequest):
     words = len(req.text.split())
-    return SummaryResponse(summary=req.text[:50], word_count=words)
+    return SummaryResponse(summary=req.text[:150], word_count=words)
